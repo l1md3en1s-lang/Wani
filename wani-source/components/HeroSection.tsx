@@ -23,25 +23,25 @@ export function HeroSection() {
         role="img"
         aria-label="처음에는 꽃을 들고 있다가 2초 뒤 불을 뿜는 와니"
       >
-        <Image
-          className="wani-hero wani-idle"
-          src="/wani.png"
-          width={1188}
-          height={1056}
-          priority
-          sizes="(max-width: 767px) 92vw, 53vw"
-          alt=""
-        />
-        <Image
-          className="wani-hero wani-fire"
-          src="/wani-fire.png"
-          width={1024}
-          height={559}
-          priority
-          sizes="(max-width: 767px) 92vw, 53vw"
-          alt=""
-          aria-hidden="true"
-        />
+        <div className="hero-character-stage">
+          <Image
+            className="wani-hero wani-idle"
+            src="/wani-clean.webp"
+            fill
+            priority
+            sizes="(max-width: 480px) 92vw, (max-width: 767px) 560px, 53vw"
+            alt=""
+          />
+          <Image
+            className="wani-hero wani-fire"
+            src="/wani-fire-clean.webp"
+            fill
+            priority
+            sizes="(max-width: 480px) 92vw, (max-width: 767px) 560px, 53vw"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
       </div>
     </section>
   );
